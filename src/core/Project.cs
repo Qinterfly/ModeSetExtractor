@@ -38,7 +38,7 @@ namespace ModesetExtractor.Core
         {
             List<ModeSet> modeSets = new List<ModeSet>();
             string systemPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\";
-            string pathFile = systemPath + IOConstants.kModeSetFileName;
+            string pathFile = systemPath + "modeSet.afm";
             try
             {
                 DataWatch dataWatch = mApp.ActiveBook.FindDataWatch("Navigator_SelectedOIDs");
@@ -73,11 +73,12 @@ namespace ModesetExtractor.Core
                         {
                             exportModeSet(type, tString, pathFile);
                             modeSets.Add(new ModeSet(pathFile, selectedFolderName));
+                            File.Delete(pathFile);
                             break;
                         }
                     }
                 }
-                File.Delete(pathFile);
+                modeSets.Sort();
             }
             catch 
             {

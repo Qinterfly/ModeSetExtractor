@@ -10,18 +10,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="archive\**" />
     <Compile Remove="examples\**" />
+    <Compile Remove="help\**" />
     <Compile Remove="obj\**" />
+    <Compile Remove="packages\**" />
     <Compile Remove="tests2\**" />
     <Compile Remove="tests3\**" />
     <Compile Remove="tests\**" />
+    <EmbeddedResource Remove="archive\**" />
     <EmbeddedResource Remove="examples\**" />
+    <EmbeddedResource Remove="help\**" />
     <EmbeddedResource Remove="obj\**" />
+    <EmbeddedResource Remove="packages\**" />
     <EmbeddedResource Remove="tests2\**" />
     <EmbeddedResource Remove="tests3\**" />
     <EmbeddedResource Remove="tests\**" />
+    <None Remove="archive\**" />
     <None Remove="examples\**" />
+    <None Remove="help\**" />
     <None Remove="obj\**" />
+    <None Remove="packages\**" />
     <None Remove="tests2\**" />
     <None Remove="tests3\**" />
     <None Remove="tests\**" />

@@ -4,7 +4,7 @@ using System.Globalization;
 
 namespace ModeSetExtractor.Core
 {
-    public class ModeSet
+    public class ModeSet : IComparable<ModeSet>
     {
         // Construct a modeset from a file
         public ModeSet(string path, string name)
@@ -46,6 +46,13 @@ namespace ModeSetExtractor.Core
                 ModeShape.Add(lineData[0], imagPart);
             }
             stream.Close();
+        }
+
+        public int CompareTo(ModeSet another)
+        {
+            if (another == null)
+                return 1;
+            return Comparer<double>.Default.Compare(Frequency, another.Frequency);
         }
 
         public readonly string Name;
