@@ -1,0 +1,11 @@
+.vs
+archive
+bin
+examples/
+obj
+help
+tests/bin
+tests/obj
+TestResults
+TODO.txt
+packages

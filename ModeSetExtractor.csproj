@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <BaseIntermediateOutputPath>bin/Intermediate</BaseIntermediateOutputPath>
+    <BaseOutputPath>bin/</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="examples\**" />
+    <Compile Remove="obj\**" />
+    <Compile Remove="tests2\**" />
+    <Compile Remove="tests3\**" />
+    <Compile Remove="tests\**" />
+    <EmbeddedResource Remove="examples\**" />
+    <EmbeddedResource Remove="obj\**" />
+    <EmbeddedResource Remove="tests2\**" />
+    <EmbeddedResource Remove="tests3\**" />
+    <EmbeddedResource Remove="tests\**" />
+    <None Remove="examples\**" />
+    <None Remove="obj\**" />
+    <None Remove="tests2\**" />
+    <None Remove="tests3\**" />
+    <None Remove="tests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove=".gitignore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="LMSTestLabAutomation">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>150</VersionMajor>
+      <Guid>c0ab99a4-8bb1-41cf-ba67-2b3240b4c124</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+
+</Project>

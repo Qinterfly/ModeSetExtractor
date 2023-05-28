@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33712.159
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModeSetExtractor", "ModeSetExtractor.csproj", "{312B9950-BAAA-4AF6-B13D-7C8B8E05D665}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "tests\Tests.csproj", "{2DC121EA-9911-46DF-BB30-01E6F074EAEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{312B9950-BAAA-4AF6-B13D-7C8B8E05D665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{312B9950-BAAA-4AF6-B13D-7C8B8E05D665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{312B9950-BAAA-4AF6-B13D-7C8B8E05D665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{312B9950-BAAA-4AF6-B13D-7C8B8E05D665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DC121EA-9911-46DF-BB30-01E6F074EAEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DC121EA-9911-46DF-BB30-01E6F074EAEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DC121EA-9911-46DF-BB30-01E6F074EAEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DC121EA-9911-46DF-BB30-01E6F074EAEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9068B0CB-9C48-41CE-B222-7C4F84C82164}
+	EndGlobalSection
+EndGlobal
