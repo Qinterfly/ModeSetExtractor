@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ModeSetExtractor": {
+      "commandName": "Project",
+      "commandLineArgs": "D:\\Library\\Projects\\Current\\ModeSetExtractor\\examples\\F70.lms F70"
+    }
+  }
+}

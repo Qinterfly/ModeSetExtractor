@@ -12,6 +12,7 @@
   <ItemGroup>
     <Compile Remove="archive\**" />
     <Compile Remove="examples\**" />
+    <Compile Remove="exec\**" />
     <Compile Remove="help\**" />
     <Compile Remove="obj\**" />
     <Compile Remove="packages\**" />
@@ -20,6 +21,7 @@
     <Compile Remove="tests\**" />
     <EmbeddedResource Remove="archive\**" />
     <EmbeddedResource Remove="examples\**" />
+    <EmbeddedResource Remove="exec\**" />
     <EmbeddedResource Remove="help\**" />
     <EmbeddedResource Remove="obj\**" />
     <EmbeddedResource Remove="packages\**" />
@@ -28,6 +30,7 @@
     <EmbeddedResource Remove="tests\**" />
     <None Remove="archive\**" />
     <None Remove="examples\**" />
+    <None Remove="exec\**" />
     <None Remove="help\**" />
     <None Remove="obj\**" />
     <None Remove="packages\**" />

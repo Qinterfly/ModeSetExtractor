@@ -25,13 +25,13 @@ namespace ModeSetExtractor.Core
             {
                 ComponentNames.Add(component);
                 Array nodeNames = geometry.ComponentNodeNames[component];
-                int numNodes = nodeNames.Length;
+                int numComponentNodes = nodeNames.Length;
                 // Component node names
                 ComponentSet.nodeNames.Add(component, nodeNames);
                 // Nodal positions in the global coordinate system
                 geometry.ComponentNodesValues(component, nodeNames, out X, out Y, out Z, out rotXY, out rotXZ, out rotYZ, LocalCoordinates: 0);
-                double[,] coordinates = new double[numNodes, 3];
-                for (int iNode = 0; iNode != numNodes; ++iNode)
+                double[,] coordinates = new double[numComponentNodes, 3];
+                for (int iNode = 0; iNode != numComponentNodes; ++iNode)
                 {
                     coordinates[iNode, 0] = (double)X.GetValue(iNode);
                     coordinates[iNode, 1] = (double)Y.GetValue(iNode);
