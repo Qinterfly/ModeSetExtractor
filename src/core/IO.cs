@@ -39,7 +39,8 @@ namespace ModeSetExtractor.Core
                 stream.WriteLine(modeSets.Count);
                 foreach (ModeSet modeSet in modeSets)
                 {
-                    stream.WriteLine("\t{0:f2}\t{1:d}", modeSet.Frequency, modeSet.ModeShape.Count);
+                    stream.WriteLine("{0}", modeSet.Name);
+                    stream.WriteLine("{0:f2}\t{1:d}",  modeSet.Frequency, modeSet.ModeShape.Count);
                     foreach (var item in modeSet.ModeShape)
                         stream.WriteLine("{0}\t{1:g}", item.Key, item.Value);
                 }
@@ -71,7 +72,7 @@ namespace ModeSetExtractor.Core
             using (StreamWriter stream = new StreamWriter(path))
             {
                 // Nodes
-                stream.WriteLine($"{numTotalNodes}\t{kNumDirections}");
+                stream.WriteLine($"{numTotalNodes}");
                 foreach (string component in model.ComponentNames)
                 {
                     Array names = model.ComponentSet.nodeNames[component];
@@ -87,6 +88,7 @@ namespace ModeSetExtractor.Core
                 }
 
                 // Elements
+                stream.WriteLine($"{model.ElementTypes.Length}");
                 foreach (ElementType type in model.ElementTypes)
                 {
                     int numTotalElements = counterElements[type][0];

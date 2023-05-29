@@ -1,7 +1,8 @@
 .vs
 archive
 bin
-examples/
+examples
+exec
 obj
 help
 tests/bin
